@@ -1,0 +1,10 @@
+// **************************************************************************
+// GateInjectGenerator
+// **************************************************************************
+
+part of 'first_tab_page.dart';
+
+extension FirstTabPresenterInjection on FirstTabPresenter {
+  ArticleService get articleService =>
+      AppProvider.instance.getArticleServiceBuild();
+}

@@ -1,0 +1,10 @@
+// **************************************************************************
+// GateInjectGenerator
+// **************************************************************************
+
+part of 'article_service.dart';
+
+extension ArticleServiceInjection on ArticleService {
+  ArticlesRepository get articlesRepository =>
+      AppProvider.instance.getArticlesRepositoryBuild();
+}
